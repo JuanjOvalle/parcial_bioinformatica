@@ -14,6 +14,14 @@
   
   Se usó el comando 'salloc' para correr los alineamientos y funciones que requerían procesamiento.
 
+### Para usar github desde la terminal
+  Crear el directorio para git: git init -b main.
+  
+  Dentro del directorio ingresar usuario: git config --global user.name "JuanjOvalle"
+  
+  Dentro del directorio ingresar correo: git config --global user.name "juanjovalle.bio@urosario.edu.co"
+  
+  Ingresar URL del repertorio: git remote add origin 
 ## Primer punto: BLAST
 ### Modificación por expresiones regulares
   Para reemplazar los nombres se usaron las siguientes expresiones: (\>\w+\.\w)(\s)(\w+)\s(\w+)(.*).
@@ -47,7 +55,8 @@
   
   En otra carpeta llamada 'arbol' se copió el archivo 'FcC_supermatrix.phy' y se cargó iqtree con: module load       iqtree. Luego para generar el arbol se usó el comando: iqtree -s FcC_supermatrix.phy -m TEST -bb 1000 -pre 
   s_exigua_muscle_tree. A partir de esto se obtuvieron varios archivos entre ellos uno llamado s_exigua_muscle_tree.treefile, el cual se visualizó con: cat s_exigua_muscle_tree.treefile, y se copió en el portapapeles para exportarlo a la página de [Phylo](https://phylo.io/). El resultado se puede visualizar como [Imágen](https://www.dropbox.com/s/3hpdyoj3ft3b9k6/arbol_parcial.png?dl=0)
-   
+### Análisis
+  Se encuentran 10 secuencias de 4 especies distintas, más la secuencia de referencia usada para el BLAST, como se esperaba, las secuencias peternecientes a la misma especie se encuentran cerca en el árbol, y se ve que la secuencia de *Spodoptera cilium* se ubica cerca a las de *Spodoptera exigua*, y es la más cercana a la secuencia de referencia (Query), el grupo de *Spodoptera* es cercano al de *Peridoma saucia*, y el más lejano es el de *Mythimna loreyi*.
 
 ## Tercer punto: Edición de archivos
   Para guardar el archivo desde la terminal se usó el comando: wget 'https://raw.githubusercontent.com/paula-torres/bioinformatica_ur/main/files/archivo1.csv'.
@@ -66,4 +75,5 @@
 ## Cuarto punto: Subir archivos
 ### Comprimir archivos
   Para comprimir el archivo se usó: zip parcial_JuanOvalle.zip parcial1.
-###
+### Subir el archivo al repositorio
+  Una vez se tiene el archivo en el local, se usa el comando: 
