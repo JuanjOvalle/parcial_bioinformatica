@@ -74,7 +74,7 @@
 
 ## Cuarto punto: Subir archivos
 ### Comprimir archivos
-  Para comprimir el archivo se usó: zip parcial_JuanOvalle.zip parcial1.
+  Para comprimir el archivo se usó: zip -r parcial_JuanOvalle.zip parcial1.
 ### Subir el archivo al repositorio
   Una vez se tiene el archivo en el local, se usa el comando: git remote add origin https://github.com/JuanjOvalle/parcial_bioinformatica.git
   
