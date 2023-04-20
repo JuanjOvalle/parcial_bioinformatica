@@ -41,5 +41,17 @@
    
 
 ## Tercer punto: Edición de archivos
+  Para guardar el archivo desde la terminal se usó el comando: wget 'https://raw.githubusercontent.com/paula-torres/bioinformatica_ur/main/files/archivo1.csv'.
+  
+  Para ver el número de filas se usó: wc archivo1.csv, el cual muestra 3 datos, siendo el segundo el número de filas, en este caso 49.
+  
+  Para ver el número de columnas se usó: awk -F "," '{print NF; exit}' archivo1.csv, el cual da como resultado 4 columnas
+  
+  Para modificar "chr" por "Cromosoma", se usa el comando: sed 's/chr/Cromosoma/g' archivo1.csv > archivo_cromo.csv.
+  
+  Para cambiar la separación de comas a espacios se usó: sed 's/,/\t/g' archivo_cromo.csv > result_file.csv.
+  
+  Por último, para hacer un archivo con sólo los datos que tuvieran 'coding', se usó: grep -v no_coding result_file.bed > result_file_coding.bed.
+  
 
 ## Cuarto punto: Subir archivos
