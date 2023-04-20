@@ -21,7 +21,16 @@
   Y se reemplazaron por: $1$2COI_$3_$4.
   
   El archivo quedó guardado como 'COI_s_exigua.fasta'.
-
+  
+  En el cluster, en una carpeta llamda "blast" dentro de la carpeta "parcial1" dentro de "JuanOvalle", se pasaron tanto la secuencia de referencia como las obtenidas a partir del popset.
+  
+  Usando el comando: module load blast/2.7.1, se cargó el script para BLAST.
+  
+  Luego se usó el comando:  makeblastdb -in query_s_exigua_COI -dbtype nucl -parse_seqids -out trans_s_exigua -title "S. exigua BLAST" ára crear la base de datos de BLAST a partir de las secuencias.
+  
+  Por último se usó:  blastn -query sec_refe.fasta -task megablast -db trans_s_exigua -outfmt 7 -word_size 7 -out blast_s_exigua -num_threads 1, para hacer el BLAST entre las secuencias y mi secuencia de referencia.
+### Resultado
+  Dado a que los porcentajes de identidad son muy altos, y los e-value muy bajos, se puede concluir que la secuencia de referencia corresponde con el gen de interés tomado a partir de las secuencias.
 ## Segundo punto: Alineamientos y árboles
 ### Concatenar
    Se usó el comando: cat query.fasta COI_s_exigua.fasta > query_s_exigua_COI.fasta
