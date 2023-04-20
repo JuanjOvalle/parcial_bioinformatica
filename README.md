@@ -19,7 +19,7 @@
   
   Dentro del directorio ingresar usuario: git config --global user.name "JuanjOvalle"
   
-  Dentro del directorio ingresar correo: git config --global user.name "juanjovalle.bio@urosario.edu.co"
+  Dentro del directorio ingresar correo: git config --global user.name "juanjovalle.bio@outlook.com"
   
   Ingresar URL del repertorio: git remote add origin 
 ## Primer punto: BLAST
@@ -76,4 +76,20 @@
 ### Comprimir archivos
   Para comprimir el archivo se usó: zip parcial_JuanOvalle.zip parcial1.
 ### Subir el archivo al repositorio
-  Una vez se tiene el archivo en el local, se usa el comando: 
+  Una vez se tiene el archivo en el local, se usa el comando: git remote add origin https://github.com/JuanjOvalle/parcial_bioinformatica.git
+  
+  Se confirma que se tengan permisos con: git remote -v
+  
+  Luego, se hace una copia del comprimido .zip a la carpeta creada para el git del repositorio del parcial, y se hacen los pasos descritos anteriormente dentro de esa carpeta.
+  
+  Luego se añade con: git add parcial1_JuanOvalle.zip
+  
+  Se confirma que esté el archivo con: git status.
+  
+  Se comete el archivo con: git commit git commit -m "Comprimido del parcial"
+  
+  Finalmente se envia al github con: git push origin main.
+  
+  
+  
+  
