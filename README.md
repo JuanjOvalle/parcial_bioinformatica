@@ -64,3 +64,6 @@
   
 
 ## Cuarto punto: Subir archivos
+### Comprimir archivos
+  Para comprimir el archivo se usó: zip parcial_JuanOvalle.zip parcial1.
+###
