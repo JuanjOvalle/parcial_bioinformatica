@@ -37,7 +37,7 @@
   dando como resultado varios archivos, de entre ellos 'FcC_supermatrix.phy' el cual se usará para hacer el arbol.
   
   En otra carpeta llamada 'arbol' se copió el archivo 'FcC_supermatrix.phy' y se cargó iqtree con: module load       iqtree. Luego para generar el arbol se usó el comando: iqtree -s FcC_supermatrix.phy -m TEST -bb 1000 -pre 
-  s_exigua_muscle_tree. A partir de esto se obtuvieron varios archivos entre ellos uno llamado s_exigua_muscle_tree.treefile, el cual se visualizó con: cat s_exigua_muscle_tree.treefile, y se copió en el portapapeles para exportarlo a la página de [Phylo](https://phylo.io/)
+  s_exigua_muscle_tree. A partir de esto se obtuvieron varios archivos entre ellos uno llamado s_exigua_muscle_tree.treefile, el cual se visualizó con: cat s_exigua_muscle_tree.treefile, y se copió en el portapapeles para exportarlo a la página de [Phylo](https://phylo.io/). El resultado se puede visualizar como [Imágen](https://www.dropbox.com/s/3hpdyoj3ft3b9k6/arbol_parcial.png?dl=0)
    
 
 ## Tercer punto: Edición de archivos
